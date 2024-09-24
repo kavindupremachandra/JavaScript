@@ -9,6 +9,10 @@
     <Script>
         //create promise object
         let sayhello=new Promise(function(resolve,reject){
+            
+            //Add below if you want to set promise to the reject status
+            //reject('unable to say hello!')
+
             setTimeout(function(){
                 resolve('Hello world!')
             },5000)
@@ -16,6 +20,9 @@
 
         sayhello.then(function(msg){
              console.log(msg)
+        }).catch(function(err){
+            //console.error(err)   ----error messege
+            console.warn(err)
         })
     </Script>
 </body>
