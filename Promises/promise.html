@@ -16,6 +16,8 @@
             setTimeout(function(){
                 resolve('Hello world!')
             },5000)
+
+            reject('unable to say hello!')
         })
 
         sayhello.then(function(msg){
