@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        new Promise((resolve,reject)=>{
+            if(Math.random(1,10)<0.5){
+                reject('We will never know')
+            }
+            resolve('42')
+        }).then((ans)=>console.log(ans))
+          .catch((err)=>console.warn(err))
+          .finally(console.warn('I will always run!'))
+    </script>
+</body>
+</html>

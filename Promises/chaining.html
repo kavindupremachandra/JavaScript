@@ -8,14 +8,19 @@
 <body>
     <script>
         let count=new Promise((resolve,reject)=>resolve(1))
-        console.log(count)
 
-        console.log(
-           count.then((num)=>{
+        //chain of promises   
+        count.then((num)=>{
               console.log(num);
-              return num;
-          })
-        )   //count.then also returns a promise
+              return num+1;
+           }).then((num)=>{
+              console.log(num);
+              return num+1;
+           }).then((num)=>{
+              console.log(num);
+              return num+1;
+           })
+       
     </script>
 </body>
 </html>
