@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create a async funstion 
+        async function getTheAnswer() {
+            return 42;
+        }
+
+        //assign the value to a vriable
+        let answer=getTheAnswer();
+        console.log(answer);
+
+        //use promise.then to get the actual value
+        answer.then((data)=>console.log(data))
+
+        
+
+    </script>
+</body>
+</html>
