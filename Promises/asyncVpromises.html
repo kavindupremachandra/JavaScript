@@ -19,8 +19,11 @@
         //use promise.then to get the actual value
         answer.then((data)=>console.log(data))
 
-        
-
+        //Also try this 
+        //this returns a promise
+        let answer2=getTheAnswer().then((ans)=>console.log(ans))
+        //this returns the value    
+        console.log(answer2)
     </script>
 </body>
 </html>
