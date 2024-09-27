@@ -24,6 +24,13 @@
         let answer2=getTheAnswer().then((ans)=>console.log(ans))
         //this returns the value    
         console.log(answer2)
+
+        async function logAnswer() {
+            let answer=await getTheAnswer();
+            console.log('async log '+answer)
+        }
+        //log async
+        logAnswer()
     </script>
 </body>
 </html>
